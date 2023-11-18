@@ -31,7 +31,7 @@ public class ProductEndpoint
         });
     }
 
-    private static readonly List<Product> ProductsDatabase = new List<Product>()
+    public static readonly List<Product> ProductsDatabase = new List<Product>()
     {
         new Product()
         {

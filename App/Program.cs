@@ -20,6 +20,7 @@ var app = builder.Build();
 app.UseRequestLocalization();
 
 app.MapGet("/", ContentEndpoint.Handle);
-app.MapGet("/product", ProductEndpoint.Handle);
+app.MapGet("/products", ProductsEndpoint.Handle);
+app.MapGet("/products/{id}", ProductEndpoint.Handle);
 
 app.Run();

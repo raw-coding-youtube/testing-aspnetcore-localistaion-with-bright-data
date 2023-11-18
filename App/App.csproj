@@ -30,4 +30,8 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="HyperTextExpression.AspNetCore" Version="0.0.7" />
+    </ItemGroup>
+
 </Project>
