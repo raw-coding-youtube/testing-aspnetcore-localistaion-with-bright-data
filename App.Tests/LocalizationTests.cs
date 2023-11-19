@@ -25,7 +25,7 @@ public class ProxyTest(ProxyClientFactory clientFactory) : IClassFixture<ProxyCl
         var client = clientFactory.Create(country);
         
         var result = await client.GetFromJsonAsync<ProductProjection>(
-            $"https://brightdata-231028155802.azurewebsites.net/product?id={productId}&check_ip"
+            $"https://brightdata-231028155802.azurewebsites.net/products/{productId}?check_ip"
         );
 
         Assert.NotNull(result);
